@@ -1,0 +1,31 @@
+@import "../../global/variables/fonts.scss";
+@import "../../global/variables/colors.scss";
+
+footer{
+    // margin-top: -100px;
+    background: $primary;
+    width: 100vw;
+    height: 10vh;
+    clip-path: url(#wave);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-right: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    span {
+        font-family: $primary-font;
+        color: $white;
+    }
+
+    svg{
+        width: 1px;
+        height: 1px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+}

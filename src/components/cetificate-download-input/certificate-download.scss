@@ -1,0 +1,55 @@
+@import "../../global/variables/fonts.scss";
+@import "../../global/variables/colors.scss";
+
+.cmp-certificate-download {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 3em;
+    box-sizing: border-box;
+
+    .cmp-certificate-download__input-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cmp-certificate-download__input {
+        width: 70%;
+        height: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: $primary-font;
+        border:none;
+        border-bottom: 1px solid $primary;
+        outline: none;
+    }
+
+    .cmp-certificate-download__button {
+        height: 50px;
+        width: 100px;
+        border: none;
+        outline: none;
+        background-color: $primary;
+        color: #fff;
+        font-family: $primary-font;
+        font-weight: 500;
+        cursor: pointer;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .cmp-certificate-download__msg {
+        text-align: center;
+        font-weight: bold;
+        color: $primary;
+
+        &.cmp-certificate-download__msg--error {
+            color: rgb(236, 109, 109);
+        }
+    }
+}

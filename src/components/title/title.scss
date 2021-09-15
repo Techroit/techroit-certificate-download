@@ -1,0 +1,37 @@
+@import "../../global/variables/colors.scss";
+
+.cmp-title {
+    display: flex;
+    flex-direction: column;
+
+    &.cmp-title--align-center {
+        align-items: center;
+    }
+
+    .cmp-title__primary {
+        color: $primary-dark-color;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 0.3em 0;
+
+        &.cmp-title__primary--smaller {
+            font-size: 1.0rem;
+        }
+    }
+
+    &.cmp-title--highlight {
+        .cmp-title__primary {
+            color: $primary;
+        }
+    }
+
+    .cmp-title__secondary {
+        color: $secondary-dark-color;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+
+        &.cmp-title__secondary--smaller {
+            font-size: 0.8rem;
+        }
+    }
+}
